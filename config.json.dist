@@ -1,0 +1,105 @@
+{
+    "releases": {
+        "vivid": "vivid release"
+    },
+    "languages": {
+        "ar": "Arabic",
+        "ast": "Asturian",
+        "be": "Belarusian",
+        "bg": "Bulgarian",
+        "bn": "Bengali",
+        "br": "Breton",
+        "ca": "Catalan",
+        "cs": "Czech",
+        "da": "Danish",
+        "de": "German",
+        "el": "Greek",
+        "en_AU": "English (Australia)",
+        "en_CA": "English (Canada)",
+        "en_GB": "English (United Kingdom)",
+        "eo": "Esperanto",
+        "es": "Spanish",
+        "et": "Estonian",
+        "eu": "Basque",
+        "fa": "Persian",
+        "fi": "Finnish",
+        "fr": "French",
+        "frp": "Franco-Provençal",
+        "gl": "Galician",
+        "he": "Hebrew",
+        "hi": "Hindi",
+        "hr": "Croatian",
+        "hu": "Hungarian",
+        "id": "Indonesian",
+        "is": "Icelandic",
+        "it": "Italian",
+        "ja": "Japanese",
+        "ka": "Georgian",
+        "km": "Khmer",
+        "ko": "Korean",
+        "lt": "Lithuanian",
+        "ml": "Malayalam",
+        "ms": "Malay",
+        "my": "Burmese",
+        "nb": "Norwegian Bokmal",
+        "nl": "Dutch",
+        "nn": "Norwegian Nynorsk",
+        "oc": "Occitan (post 1500)",
+        "pl": "Polish",
+        "pt_BR": "Brazilian Portuguese",
+        "pt": "Portuguese",
+        "ro": "Romanian",
+        "ru": "Russian",
+        "si": "Sinhalese",
+        "sk": "Slovak",
+        "sl": "Slovenian",
+        "sq": "Albanian",
+        "sr": "Serbian",
+        "sv": "Swedish",
+        "ta": "Tamil",
+        "th": "Thai",
+        "tr": "Turkish",
+        "uk": "Ukrainian",
+        "vi": "Vietnamese",
+        "zh_CN": "Chinese (Simplified)",
+        "zh_HK": "Chinese (Hong Kong)",
+        "zh_TW": "Chinese (Traditional)"
+    },
+    "views": {
+        "app": "app_installed_packages",
+        "pack": "all_packages"
+    },
+    "repositories": {
+        "main": "main",
+        "restricted": "restricted",
+        "multiverse": "multiverse",
+        "universe": "universe"
+    },
+    "statuses": {
+        "all": "all",
+        "true": "translated",
+        "false": "not_translated"
+    },
+    "numberOfRows": [
+    	10,
+        20,
+        30,
+        40,
+        50,
+        100
+    ],
+    "sortings": {
+        "none": "none",
+        "asc": "ascending",
+        "dsc": "descending"
+    },
+    "popcons": [
+        39889,
+        79779,
+        119659,
+        159549
+    ],
+    "others": {
+        "projectWikiURL": "https://wiki.ubuntu.com/Nightmonkey"
+    }
+}

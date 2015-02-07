@@ -1,0 +1,17 @@
+{
+  "name": "nightmonkey",
+  "version": "0.0.0",
+  "description": "Nightmonkey JS port",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/connorhu/nightmonkey.git"
+  },
+  "dependencies": {
+    "express": ">=1.0.0",
+    "swig": ">=1.0.0",
+    "sqlite3": "~3.0.4"
+  },
+  "devDependencies": {
+    "node-gettext": "^1.0.0"
+  }
+}

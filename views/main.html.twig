@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block scripts %}
+
+    {% parent %}
+
+    <script type="text/javascript">
+    var translated = "{{ 'Translated'|trans }}";
+    var notTranslated = "{{ 'Not translated'|trans }}";
+    var part = "{{ 'Part %d'|trans }}";
+    var ok = " ({{ 'Ok'|trans }})";
+    var relese, language, repository;
+    var popconMax = {{ popconMax }};
+    
+    function idFormatter(value) {
+        return ['<b>', value, '.</b>'].join('');
+    }
+    function statusFormatter(value) {
+        return [
+            '<img src="http://nightmonkey.ubuntu.hu/images/', (value ? 'translated.png' : 'untranslated.png'), '" alt="',
+            (value ? translated : notTranslated), '">'
+        ].join('');
+    }
+    function shortDescriptionFormatter(value, row) {
+        var url = [
+            'https://translations.launchpad.net/ddtp-ubuntu/ubuntu/+pots/ddtp-ubuntu-', repository,
+            '/', language,
+            '/+translate?batch=10&show=all&search=', value
+        ].join('');
+        
+        return [
+            '<a href="', url, '">', (row.shortdescstat == 1 ? translated : notTranslated), '</a>'
+        ].join('');
+    }
+    function longDescriptionFormatter(value, row) {
+        if (value.length == 0) return '';
+        
+        var statParts = row.longdescsstat.split(',')
+        var descParts = value.split(',');
+        var results = [];
+        for (var i = 0; i < descParts.length; i++) {
+            var url = [
+                'https://translations.launchpad.net/ddtp-ubuntu/ubuntu/+pots/ddtp-ubuntu-', repository, '/', language, '/+translate?batch=10&show=all&search=', descParts[i]
+            ];
+            var tmp = [
+                '<a href="', url.join('') ,'">', part.replace('%d', i+1), (statParts[i]*1 == 1 ? ok : ''), '</a>'
+            ].join('');
+            results.push(tmp);
+        }
+        return results.join(', ');
+    }
+    function popconFormatter(value) {
+        var stars = 0;
+        if (value > 0) {
+            stars = (5 * Math.log(value)/Math.log(popconMax+1));
+            console.log(stars);
+        }
+        return ['<img src="http://nightmonkey.ubuntu.hu/images/', stars, '.png" title="', value, '" alt="', value ,'">'].join('')
+    }
+    
+    function queryParams(params) {
+        relese = params['release'] = $('#release_selector').val();
+        language = params['language'] = $('#language_selector').val();
+        repository = params['repository'] = $('#repository_selector').val();
+        return params;
+    }
+    
+    $('#repository_selector, #release_selector, #language_selector').change(function () {
+        $('#mainTable').bootstrapTable('refresh');
+    });
+    </script>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <p>{{ "Welcome to Nightmonkey, an intuitive interface for translating package descriptions. Translating DDTP descriptions is usually a mess but Nighmonkey enables you to filter out the packages of each repository that are more important to translate: those found in the software center or that are very popular. You can easily see what is left to do, and you can search for particular package descriptions as well. For more information, see %sNightmonkey's wiki page%s."|trans}} </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="{{ config.others.projectWikiURL }}" role="button">{{ 'Wiki page of Nightmonkey »'|trans }}</a>
+            </p>
+        </div>
+        <div id="toolbar" class="btn-group">
+            <select name="release" id="release_selector">
+                {% for key, release in config.releases %}
+                    <option value="{{ key }}">{{ release }}</option>
+                {% endfor %}
+            </select>
+            <select name="repository" id="repository_selector">
+                {% for key, repository in config.repositories %}
+                    <option value="{{ key }}">{{ repository }}</option>
+                {% endfor %}
+            </select>
+            <select name="language" id="language_selector">
+                {% for key, language in config.languages %}
+                    <option value="{{ key }}">{{ language|trans }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <table data-toggle="table"
+               data-url="/search"
+               data-query-params="queryParams"
+               data-pagination="true"
+               data-search="true"
+               data-toolbar="#toolbar"
+               id="mainTable">
+            <thead>
+            <tr>
+                <th data-field="id" data-formatter="idFormatter">{{ 'Number'|trans }}</th>
+                <th data-field="status" data-formatter="statusFormatter">{{ 'Status'|trans }}</th>
+                <th data-field="package">{{ 'Package name'|trans }}</th>
+                <th data-field="shortdesc" data-formatter="shortDescriptionFormatter">{{ 'Short description'|trans }}</th>
+                <th data-field="longdescs" data-formatter="longDescriptionFormatter">{{ 'Long description'|trans }}</th>
+                <th data-field="popcon" data-formatter="popconFormatter">{{ 'Popcon'|trans }}</th>
+            </tr>
+            </thead>
+        </table>
+        <a class="simple" href="http://barack.fsf.hu/"><img alt="Powered by barack" src="http://nightmonkey.ubuntu.hu/images/barack_powered.jpg"/></a>
+    </div>
+{% endblock %}
