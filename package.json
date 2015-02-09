@@ -1,5 +1,6 @@
 {
   "name": "nightmonkey",
+  "main": "app.js",
   "version": "0.0.0",
   "description": "Nightmonkey JS port",
   "repository": {
