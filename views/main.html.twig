@@ -56,7 +56,6 @@
         var stars = 0;
         if (value > 0) {
             stars = (5 * Math.log(value)/Math.log(popconMax+1));
-            console.log(stars);
         }
         return ['<img src="http://nightmonkey.ubuntu.hu/images/', stars, '.png" title="', value, '" alt="', value ,'">'].join('')
     }
