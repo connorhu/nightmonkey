@@ -103,17 +103,26 @@
         <div id="toolbar" class="btn-group">
             <select name="release" id="release_selector">
                 {% for key, release in config.releases %}
-                    <option value="{{ key }}">{{ release }}</option>
+                    <option value="{{ key }}"
+                    {%- if key == parameters.release -%}
+                        {{ ' selected="selected"'}}
+                    {%- endif %}>{{ release }}</option>
                 {% endfor %}
             </select>
             <select name="repository" id="repository_selector">
                 {% for key, repository in config.repositories %}
-                    <option value="{{ key }}">{{ repository }}</option>
+                    <option value="{{ key }}"
+                    {%- if key == parameters.repository -%}
+                        {{ ' selected="selected"'}}
+                    {%- endif %}>{{ repository }}</option>
                 {% endfor %}
             </select>
             <select name="language" id="language_selector">
                 {% for key, language in config.languages %}
-                    <option value="{{ key }}">{{ language|trans }}</option>
+                    <option value="{{ key }}"
+                    {%- if key == parameters.language -%}
+                        {{ ' selected="selected"'}}
+                    {%- endif %}>{{ language|trans }}</option>
                 {% endfor %}
             </select>
         </div>

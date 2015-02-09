@@ -77,18 +77,26 @@ app.use(express.static(__dirname +'/public'));
  */
 swig.setDefaults({ cache: false });
 
-router.get('/', function(req, res, next) {
+mainController = function(req, res, next) {
+    var release = validateValue(req.params.release, config.releases)
+    var repository = validateValue(req.params.repository, config.repositories)
+    var language = validateValue(req.params.language, config.languages)
+
     db.get('SELECT MAX(value) max FROM popcon', function (err, row) {
         row = row || {max: 0}
         res.render('main.html.twig', {
             'config': config,
-            'popconMax': row.max * 1
+            'popconMax': row.max * 1,
+            'parameters': {
+                release: release,
+                repository: repository,
+                language: language
+            }
         })
     })
-})
+};
 
 router.get('/search', function(req, res, next) {
-
     var release = validateValue(req.query.release, config.releases)
     var language = validateValue(req.query.language, config.languages)
     var repository = validateValue(req.query.repository, config.repositories)
@@ -129,6 +137,10 @@ router.get('/search', function(req, res, next) {
         })
     })
 })
+router.get('/', mainController)
+router.get('/:release', mainController)
+router.get('/:release/:repository', mainController)
+router.get('/:release/:repository/:language', mainController)
 
 app.use('/', router);
 
