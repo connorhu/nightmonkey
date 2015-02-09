@@ -1,0 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-05 13:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lang.php:7
+#, php-format
+msgid ""
+"Welcome to Nightmonkey, an intuitive interface for translating package "
+"descriptions. Translating DDTP descriptions is usually a mess but Nighmonkey "
+"enables you to filter out the packages of each repository that are more "
+"important to translate: those found in the software center or that are very "
+"popular. You can easily see what is left to do, and you can search for "
+"particular package descriptions as well. For more information, see %"
+"sNightmonkey's wiki page%s."
+msgstr ""
+
+#: lang.php:8
+msgid "Release"
+msgstr ""
+
+#: lang.php:9
+msgid "Language"
+msgstr ""
+
+#: lang.php:10
+msgid "View"
+msgstr ""
+
+#: lang.php:11
+msgid "Repository"
+msgstr ""
+
+#: lang.php:12
+msgid "Status"
+msgstr ""
+
+#: lang.php:13
+msgid "Search package"
+msgstr ""
+
+#: lang.php:14
+msgid "Package name"
+msgstr ""
+
+#: lang.php:15
+msgid "Sort"
+msgstr ""
+
+#: lang.php:16
+msgid "Number"
+msgstr ""
+
+#: lang.php:17
+msgid "Packages in Software Center"
+msgstr ""
+
+#: lang.php:18
+msgid "All packages"
+msgstr ""
+
+#: lang.php:19
+msgid "All"
+msgstr ""
+
+#: lang.php:20
+msgid "Translated"
+msgstr ""
+
+#: lang.php:21
+msgid "Not translated"
+msgstr ""
+
+#: lang.php:22
+msgid "First"
+msgstr ""
+
+#: lang.php:23
+msgid "Last"
+msgstr ""
+
+#: lang.php:24
+msgid "Short description"
+msgstr ""
+
+#: lang.php:25
+msgid "Long description"
+msgstr ""
+
+#: lang.php:26
+#, php-format
+msgid "Part %d"
+msgstr ""
+
+#: lang.php:27
+msgid "Ok"
+msgstr ""
+
+#: lang.php:28
+msgid "Number of rows"
+msgstr ""
+
+#: lang.php:29
+msgid "Package not found!"
+msgstr ""
+
+#: lang.php:30
+msgid "Database not found!"
+msgstr ""
+
+#: lang.php:31
+msgid "Repository not found!"
+msgstr ""
+
+#: lang.php:32
+msgid "Popcon"
+msgstr ""
+
+#: lang.php:33
+msgid "Alphabetically"
+msgstr ""
+
+#: lang.php:34
+msgid "Ascending by popcon"
+msgstr ""
+
+#: lang.php:35
+msgid "Descending by popcon"
+msgstr ""
+
+#: lang.php:36
+msgid "Arabic"
+msgstr ""
+
+#: lang.php:37
+msgid "Asturian"
+msgstr ""
+
+#: lang.php:38
+msgid "Belarusian"
+msgstr ""
+
+#: lang.php:39
+msgid "Bulgarian"
+msgstr ""
+
+#: lang.php:40
+msgid "Bengali"
+msgstr ""
+
+#: lang.php:41
+msgid "Breton"
+msgstr ""
+
+#: lang.php:42
+msgid "Catalan"
+msgstr ""
+
+#: lang.php:43
+msgid "Czech"
+msgstr ""
+
+#: lang.php:44
+msgid "Danish"
+msgstr ""
+
+#: lang.php:45
+msgid "German"
+msgstr ""
+
+#: lang.php:46
+msgid "Greek"
+msgstr ""
+
+#: lang.php:47
+msgid "English (Australia)"
+msgstr ""
+
+#: lang.php:48
+msgid "English (Canada)"
+msgstr ""
+
+#: lang.php:49
+msgid "English (United Kingdom)"
+msgstr ""
+
+#: lang.php:50
+msgid "Esperanto"
+msgstr ""
+
+#: lang.php:51
+msgid "Spanish"
+msgstr ""
+
+#: lang.php:52
+msgid "Estonian"
+msgstr ""
+
+#: lang.php:53
+msgid "Basque"
+msgstr ""
+
+#: lang.php:54
+msgid "Persian"
+msgstr ""
+
+#: lang.php:55
+msgid "Finnish"
+msgstr ""
+
+#: lang.php:56
+msgid "French"
+msgstr ""
+
+#: lang.php:57
+msgid "Franco-Provençal"
+msgstr ""
+
+#: lang.php:58
+msgid "Galician"
+msgstr ""
+
+#: lang.php:59
+msgid "Hebrew"
+msgstr ""
+
+#: lang.php:60
+msgid "Hindi"
+msgstr ""
+
+#: lang.php:61
+msgid "Croatian"
+msgstr ""
+
+#: lang.php:62
+msgid "Hungarian"
+msgstr ""
+
+#: lang.php:63
+msgid "Indonesian"
+msgstr ""
+
+#: lang.php:64
+msgid "Icelandic"
+msgstr ""
+
+#: lang.php:65
+msgid "Italian"
+msgstr ""
+
+#: lang.php:66
+msgid "Japanese"
+msgstr ""
+
+#: lang.php:67
+msgid "Georgian"
+msgstr ""
+
+#: lang.php:68
+msgid "Khmer"
+msgstr ""
+
+#: lang.php:69
+msgid "Korean"
+msgstr ""
+
+#: lang.php:70
+msgid "Lithuanian"
+msgstr ""
+
+#: lang.php:71
+msgid "Malayalam"
+msgstr ""
+
+#: lang.php:72
+msgid "Malay"
+msgstr ""
+
+#: lang.php:73
+msgid "Burmese"
+msgstr ""
+
+#: lang.php:74
+msgid "Norwegian Bokmal"
+msgstr ""
+
+#: lang.php:75
+msgid "Dutch"
+msgstr ""
+
+#: lang.php:76
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+#: lang.php:77
+msgid "Occitan (post 1500)"
+msgstr ""
+
+#: lang.php:78
+msgid "Polish"
+msgstr ""
+
+#: lang.php:79
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#: lang.php:80
+msgid "Portuguese"
+msgstr ""
+
+#: lang.php:81
+msgid "Romanian"
+msgstr ""
+
+#: lang.php:82
+msgid "Russian"
+msgstr ""
+
+#: lang.php:83
+msgid "Sinhalese"
+msgstr ""
+
+#: lang.php:84
+msgid "Slovak"
+msgstr ""
+
+#: lang.php:85
+msgid "Slovenian"
+msgstr ""
+
+#: lang.php:86
+msgid "Albanian"
+msgstr ""
+
+#: lang.php:87
+msgid "Serbian"
+msgstr ""
+
+#: lang.php:88
+msgid "Swedish"
+msgstr ""
+
+#: lang.php:89
+msgid "Tamil"
+msgstr ""
+
+#: lang.php:90
+msgid "Thai"
+msgstr ""
+
+#: lang.php:91
+msgid "Turkish"
+msgstr ""
+
+#: lang.php:92
+msgid "Ukrainian"
+msgstr ""
+
+#: lang.php:93
+msgid "Vietnamese"
+msgstr ""
+
+#: lang.php:94
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: lang.php:95
+msgid "Chinese (Hong Kong)"
+msgstr ""
+
+#: lang.php:96
+msgid "Chinese (Traditional)"
+msgstr ""

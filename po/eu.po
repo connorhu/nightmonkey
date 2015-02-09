@@ -1,22 +1,21 @@
-# Hungarian translations for PACKAGE package.
-# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# <sianis@gmail.com>, 2010.
-# Nyitrai István <sianis@gmail.com>, 2010.
+# Basque translation for ddtp-lp-html
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ddtp-lp-html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: ddtp-lp-html\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-01-08 19:30+0100\n"
-"PO-Revision-Date: 2012-01-10 20:26+0000\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"PO-Revision-Date: 2010-03-31 15:32+0000\n"
+"Last-Translator: Oier Mees <Unknown>\n"
+"Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-01-11 04:42+0000\n"
+"X-Launchpad-Export-Date: 2012-01-09 04:51+0000\n"
 "X-Generator: Launchpad (build 14640)\n"
-"Language: hu\n"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:7
 #, php-format
@@ -27,381 +26,374 @@ msgid ""
 "important to translate: those found in the software center or that are very "
 "popular. You can easily see what is left to do, and you can search for "
 "particular package descriptions as well. For more information, see "
-"Nightmonkey's wiki page."
+"%sNightmonkey's wiki page%s."
 msgstr ""
-"Üdv a Nightmonkeyban, a csomagleírások fordítására szolgáló intuitív "
-"felületen. A DDTP leírások fordítása általában egy hatalmas katyvasz, de a "
-"Nightmonkey lehetővé teszi az egyes tárolók fontosabb fordítani valóinak "
-"kiszűrését: a Szoftverközpontban található, vagy népszerű csomagokat. "
-"Egyszerűen látható, hogy mi van még hátra, valamint adott csomagok leírásai "
-"is egyszerűen kereshetők. További információkért lásd a Nightmonkey "
-"wikioldalát."
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:8
 msgid "Release"
-msgstr "Kiadás"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:9
 msgid "Language"
-msgstr "Nyelv"
+msgstr "Hizkuntza"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:10
 msgid "View"
-msgstr "Nézet"
+msgstr "Ikusi"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:11
 msgid "Repository"
-msgstr "Tároló"
+msgstr "Biltegia"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:12
 msgid "Status"
-msgstr "Állapot"
+msgstr "Egoera"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:13
 msgid "Search package"
-msgstr "Csomag keresése"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:14
 msgid "Package name"
-msgstr "Csomag neve"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:15
 msgid "Sort"
-msgstr "Rendezés"
+msgstr "Ordenatu"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:16
 msgid "Number"
-msgstr "Szám"
+msgstr "Zenbakia"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:17
 msgid "Packages in Software Center"
-msgstr "Szoftverközpont csomagjai"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:18
 msgid "All packages"
-msgstr "Minden csomag"
+msgstr "Pakete guztiak"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:19
 msgid "All"
-msgstr "Összes"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:20
 msgid "Translated"
-msgstr "Lefordított"
+msgstr "Itzulita"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:21
 msgid "Not translated"
-msgstr "Nem lefordított"
+msgstr "Itzuli gabe"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:22
 msgid "First"
-msgstr "Első"
+msgstr "Lehena"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:23
 msgid "Last"
-msgstr "Utolsó"
+msgstr "Azkena"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:24
 msgid "Short description"
-msgstr "Rövid leírás"
+msgstr "Deskribapen motza"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:25
 msgid "Long description"
-msgstr "Hosszú leírás"
+msgstr "Deskribapen luzea"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:26
 #, php-format
 msgid "Part %d"
-msgstr "%d. rész"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:27
 msgid "Ok"
-msgstr "Ok"
+msgstr "Ados"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:28
 msgid "Number of rows"
-msgstr "Sorok száma"
+msgstr "Errenkada kopurua"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:29
 msgid "Package not found!"
-msgstr "Nem található csomag!"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:30
 msgid "Database not found!"
-msgstr "Nem található adatbázis!"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:31
 msgid "Repository not found!"
-msgstr "Nem található tároló!"
+msgstr "Ez da biltegia aurkitu!"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:32
 msgid "Popcon"
-msgstr "Népszerűség"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:33
 msgid "Rating"
-msgstr "Értékelés"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:34
 msgid "Alphabetically"
-msgstr "Ábécérendbe"
+msgstr "Alfabetikoki"
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:35
 msgid "Ascending by popcon"
-msgstr "Népszerűség szerint növekvő"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:36
 msgid "Descending by popcon"
-msgstr "Népszerűség szerint csökkenő"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:37
 msgid "Ascending by rating"
-msgstr "Értékelés szerint növekvő"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:38
 msgid "Descending by rating"
-msgstr "Értékelés szerint csökkenő"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:39
 msgid "Arabic"
-msgstr "Arab"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:40
 msgid "Asturian"
-msgstr "Asztúri"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:41
 msgid "Belarusian"
-msgstr "Fehérorosz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:42
 msgid "Bulgarian"
-msgstr "Bolgár"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:43
 msgid "Bengali"
-msgstr "Bengáli"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:44
 msgid "Breton"
-msgstr "Breton"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:45
 msgid "Catalan"
-msgstr "Katalán"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:46
 msgid "Czech"
-msgstr "Cseh"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:47
 msgid "Danish"
-msgstr "Dán"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:48
 msgid "German"
-msgstr "Német"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:49
 msgid "Greek"
-msgstr "Görög"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:50
 msgid "English (Australia)"
-msgstr "Angol (Ausztrália)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:51
 msgid "English (Canada)"
-msgstr "Angol (Kanada)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:52
 msgid "English (United Kingdom)"
-msgstr "Angol (Egyesült Királyság)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:53
 msgid "Esperanto"
-msgstr "Eszperantó"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:54
 msgid "Spanish"
-msgstr "Spanyol"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:55
 msgid "Estonian"
-msgstr "Észt"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:56
 msgid "Basque"
-msgstr "Baszk"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:57
 msgid "Persian"
-msgstr "Perzsa"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:58
 msgid "Finnish"
-msgstr "Finn"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:59
 msgid "French"
-msgstr "Francia"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:60
 msgid "Franco-Provençal"
-msgstr "Frankoprovanszál"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:61
 msgid "Galician"
-msgstr "Galíciai"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:62
 msgid "Hebrew"
-msgstr "Héber"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:63
 msgid "Hindi"
-msgstr "Hindi"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:64
 msgid "Croatian"
-msgstr "Horvát"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:65
 msgid "Hungarian"
-msgstr "Magyar"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:66
 msgid "Indonesian"
-msgstr "Indonéz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:67
 msgid "Icelandic"
-msgstr "Izlandi"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:68
 msgid "Italian"
-msgstr "Olasz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:69
 msgid "Japanese"
-msgstr "Japán"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:70
 msgid "Georgian"
-msgstr "Grúz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:71
 msgid "Khmer"
-msgstr "Khmer"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:72
 msgid "Korean"
-msgstr "Koreai"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:73
 msgid "Lithuanian"
-msgstr "Litván"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:74
 msgid "Malayalam"
-msgstr "Malajálam"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:75
 msgid "Malay"
-msgstr "Maláj"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:76
 msgid "Burmese"
-msgstr "Burmai"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:77
 msgid "Norwegian Bokmal"
-msgstr "Norvég bokmal"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:78
 msgid "Dutch"
-msgstr "Holland"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:79
 msgid "Norwegian Nynorsk"
-msgstr "Norvég nynorsk"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:80
 msgid "Occitan (post 1500)"
-msgstr "Okcitán (1500 utáni)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:81
 msgid "Polish"
-msgstr "Lengyel"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:82
 msgid "Brazilian Portuguese"
-msgstr "Brazíliai portugál"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:83
 msgid "Portuguese"
-msgstr "Portugál"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:84
 msgid "Romanian"
-msgstr "Román"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:85
 msgid "Russian"
-msgstr "Orosz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:86
 msgid "Sinhalese"
-msgstr "Szingaléz"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:87
 msgid "Slovak"
-msgstr "Szlovák"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:88
 msgid "Slovenian"
-msgstr "Szlovén"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:89
 msgid "Albanian"
-msgstr "Albán"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:90
 msgid "Serbian"
-msgstr "Szerb"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:91
 msgid "Swedish"
-msgstr "Svéd"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:92
 msgid "Tamil"
-msgstr "Tamil"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:93
 msgid "Thai"
-msgstr "Thai"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:94
 msgid "Turkish"
-msgstr "Török"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:95
 msgid "Ukrainian"
-msgstr "Ukrán"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:96
 msgid "Vietnamese"
-msgstr "Vietnami"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:97
 msgid "Chinese (Simplified)"
-msgstr "Kínai (egyszerűsített)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:98
 msgid "Chinese (Hong Kong)"
-msgstr "Kínai (Hong Kong)"
+msgstr ""
 
 #: ../frontend/nightmonkey.ci.app/config/lang.php:99
 msgid "Chinese (Traditional)"
-msgstr "Kínai (hagyományos)"
+msgstr ""
