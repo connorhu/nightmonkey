@@ -55,7 +55,7 @@
     function popconFormatter(value) {
         var stars = 0;
         if (value > 0) {
-            stars = (5 * Math.log(value)/Math.log(popconMax+1));
+            stars = Math.floor(5 * Math.log(value)/Math.log(popconMax+1));
         }
         return ['<img src="http://nightmonkey.ubuntu.hu/images/', stars, '.png" title="', value, '" alt="', value ,'">'].join('')
     }
