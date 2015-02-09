@@ -57,6 +57,13 @@
         }
         return ['<img src="http://nightmonkey.ubuntu.hu/images/', stars, '.png" title="', value, '" alt="', value ,'">'].join('')
     }
+    function rateFormatter(value) {
+        var stars = 0;
+        if (value > 0) {
+            stars = Math.round(value);
+        }
+        return ['<img src="http://nightmonkey.ubuntu.hu/images/', stars, '.rate.png" title="', value, '" alt="', value ,'">'].join('');
+    }
     
     function queryParams(params) {
         relese = params['release'] = $('#release_selector').val();
@@ -113,6 +120,7 @@
                 <th data-field="shortdesc" data-formatter="shortDescriptionFormatter">{{ 'Short description'|trans }}</th>
                 <th data-field="longdescs" data-formatter="longDescriptionFormatter">{{ 'Long description'|trans }}</th>
                 <th data-field="popcon" data-formatter="popconFormatter">{{ 'Popcon'|trans }}</th>
+                <th data-field="rate" data-formatter="rateFormatter">{{ 'Rating'|trans }}</th>
             </tr>
             </thead>
         </table>

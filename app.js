@@ -104,10 +104,11 @@ router.get('/search', function(req, res, next) {
             res.json([])
             return
         }
-        queryParts.push('SELECT t.rowid id, isApp, isOk status, longdescs, longdescsstat, t.package, shortdesc, shortdescstat, popcon.value popconValue')
+        queryParts.push('SELECT t.rowid id, isApp, isOk status, longdescs, longdescsstat, t.package, shortdesc, shortdescstat, p.value popcon, r.value rate')
         queryParts.push(f('FROM %s t', tableName))
-        queryParts.push('LEFT JOIN popcon USING(package)')
-    
+        queryParts.push('LEFT JOIN popcon p USING(package)')
+        queryParts.push('LEFT JOIN rnr r USING(package)')
+
         if (packageStatus != 'all') {
             queryParts.push(f('AND isok %s', packageStatus))
         }
@@ -119,6 +120,9 @@ router.get('/search', function(req, res, next) {
         var query = queryParts.join(' ')
         
         db.each(query, function(err, row) {
+            if (!row.rate) {
+                row.rate = 0
+            }
             rows.push(row)
         }, function (err) {
             res.json(rows)
