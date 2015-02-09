@@ -21,11 +21,12 @@
             (value ? translated : notTranslated), '">'
         ].join('');
     }
+    
     function shortDescriptionFormatter(value, row) {
         var url = [
-            'https://translations.launchpad.net/ddtp-ubuntu/ubuntu/+pots/ddtp-ubuntu-', repository,
+            'https://translations.launchpad.net/ddtp-ubuntu/', release ,'/+pots/ddtp-ubuntu-', repository ,
             '/', language,
-            '/+translate?batch=10&show=all&search=', value
+            '/', value, '/+translate'
         ].join('');
         
         return [
@@ -40,7 +41,9 @@
         var results = [];
         for (var i = 0; i < descParts.length; i++) {
             var url = [
-                'https://translations.launchpad.net/ddtp-ubuntu/ubuntu/+pots/ddtp-ubuntu-', repository, '/', language, '/+translate?batch=10&show=all&search=', descParts[i]
+                'https://translations.launchpad.net/ddtp-ubuntu/', release ,'/+pots/ddtp-ubuntu-', repository ,
+                '/', language,
+                '/', descParts[i], '/+translate'
             ];
             var tmp = [
                 '<a href="', url.join('') ,'">', part.replace('%d', i+1), (statParts[i]*1 == 1 ? ok : ''), '</a>'
