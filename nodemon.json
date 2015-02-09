@@ -1,0 +1,9 @@
+{
+    "env": {
+        "PORT": 3000
+    },
+    "watch": [
+        "*.*",
+        "config.json"
+    ]
+}
